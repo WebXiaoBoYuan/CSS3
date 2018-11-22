@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+}
+.big{
+	width: 500px;
+	display: inline-block;	
+	height: 500px;
+}
+.left{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-color: red;
+	position: relative;
+	animation-name: xq;
+	animation-duration:2s;
+	animation-iteration-count: 5;
+}
+@keyframes xq{
+	from{left: 0px;}
+	to{left: 500px;}
+}
+.right{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-color: red;
+	position: absolute;
+	animation-name: dq;
+	animation-duration: 2s;
+	animation-iteration-count: 5;
+}
+@keyframes dq{
+	from{left: 500px;top: 0px;}
+	to{left:500px;top: 500px; }
+}
+
+.buttom_left{
+	position: absolute;
+	top: 500px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	animation-name: sb;
+	animation-duration: 2s;
+	animation-iteration-count: 5;
+}
+@keyframes sb{
+	from{left: 0px;top: 500px;}
+	to{left: 0px; top: 0px;}
+}
+.buttom_right{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	display: block;
+	position: absolute;
+	top: 500px;
+	left: 500px;
+	animation-name: xsq;
+	animation-duration: 2s;
+	animation-iteration-count: 5;
+}
+@keyframes xsq{
+	from{top: 500px;left: 500px;}
+	to{top: 500px; left: 0px;}
+}
